@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Kablammo&family=Lavishly+Yours&family=Moo+Lah+Lah&family=Playwrite+AU+VIC+Guides&family=Stack+Sans+Notch:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+
+body {
+   background: radial-gradient(
+    ellipse at center,
+    #e4f5fc 0%,
+    #bfe8f9 50%,
+    #9fd8ef 51%,
+    #2ab0ed 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+@media (min-width: 450px) {
+  justify-content: center;
+  display: flex; 
+  flex-flow: row wrap;
+}
+}
+@media (mmin-width: 584px) {
+  justify-content: center;
+  display: grid; 
+  flex-flow: 1fr 1fr 1fr 1fr;
+}
+nav{ 
+display: flex;
+grid-tempalte-columns: 1fr;
+}
+
+nav h2 {
+  text-align: center;
+}
+/* borders  https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-style*/
+header nav {
+  border: groove black 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  text-align: center;
+  font-family: henny Penny;
+  padding: 1rem;
+  background: radial-gradient(ellipse at center,rgba(30, 87, 153, 0) 0%,rgba(30, 87, 153, 0.8) 15%,rgba(30, 87, 153, 1) 19%,rgba(30, 87, 153, 1) 20%,rgba(41, 137, 216, 1) 50%,rgba(30, 87, 153, 1) 80%,rgba(30, 87, 153, 1) 81%,rgba(30, 87, 153, 0.8) 85%,rgba(30, 87, 153, 0) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  text-decoration: none;
+  list-style-type: none;
+  text-align: center;
+}
+.img .card,.card1, .card2, .card3, .card4
+{
+display: grid;
+grid-template-columns: 1fr, 1fr, 1fr, 1fr
+border: solid black .2rem;
+background-color: 
+}
+
+.img{
+justify-content: center;
+display: inline-block;
+}
+.card5, .card6, .card7, 
+{
+ display: grid;
+ grid-template-columns: 
+ }
+
+footer li{
+display: flex; 
+flex-flow: row-wrap;
+justify-content: space-betwwen; 
+}
+
+/*  h1 {
+  font-family: Lavishly Yours;
+  color: #808000;
+}
+h2 {
+  color: #e69900;
+  font-family: Playwrite;
+}
+h3 {
+  color: #4d3300;
+}
+
+p:hover {
+  color: #4d4d33;
+}
+
+a:hover {
+  background-color: #808000;
+}
+
+a {
+  color: #000000;
+}
+ */
