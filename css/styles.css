@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
 
 body {
-   background: radial-gradient(
+  background: radial-gradient(
     ellipse at center,
     #e4f5fc 0%,
     #bfe8f9 50%,
@@ -12,18 +12,26 @@ body {
 }
 @media (min-width: 450px) {
   justify-content: center;
-  display: flex; 
+  display: flex;
   flex-flow: row wrap;
 }
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  border: solid 1rem white;
+  padding: 1rem;
+  justify-content: justify;
 }
-@media (mmin-width: 584px) {
-  justify-content: center;
-  display: grid; 
-  flex-flow: 1fr 1fr 1fr 1fr;
+
+@media (min-width: 555px) {
+  .parent {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-nav{ 
-display: flex;
-grid-tempalte-columns: 1fr;
+nav {
+  display: flex;
 }
 
 nav h2 {
@@ -38,7 +46,17 @@ header nav {
   text-align: center;
   font-family: henny Penny;
   padding: 1rem;
-  background: radial-gradient(ellipse at center,rgba(30, 87, 153, 0) 0%,rgba(30, 87, 153, 0.8) 15%,rgba(30, 87, 153, 1) 19%,rgba(30, 87, 153, 1) 20%,rgba(41, 137, 216, 1) 50%,rgba(30, 87, 153, 1) 80%,rgba(30, 87, 153, 1) 81%,rgba(30, 87, 153, 0.8) 85%,rgba(30, 87, 153, 0) 100%
+  background: radial-gradient(
+    ellipse at center,
+    rgba(30, 87, 153, 0) 0%,
+    rgba(30, 87, 153, 0.8) 15%,
+    rgba(30, 87, 153, 1) 19%,
+    rgba(30, 87, 153, 1) 20%,
+    rgba(41, 137, 216, 1) 50%,
+    rgba(30, 87, 153, 1) 80%,
+    rgba(30, 87, 153, 1) 81%,
+    rgba(30, 87, 153, 0.8) 85%,
+    rgba(30, 87, 153, 0) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
@@ -50,28 +68,21 @@ nav ul {
   list-style-type: none;
   text-align: center;
 }
-.img .card,.card1, .card2, .card3, .card4
-{
-display: grid;
-grid-template-columns: 1fr, 1fr, 1fr, 1fr
-border: solid black .2rem;
-background-color: 
+
+.img {
+  justify-content: center;
+  display: inline-block;
 }
 
-.img{
-justify-content: center;
-display: inline-block;
+.footer {
+  display: flex;
+  flex-flow: row-wrap;
+  gap: 1rem;
+  justify-content: space-betwwen;
 }
-.card5, .card6, .card7, 
-{
- display: grid;
- grid-template-columns: 
- }
 
-footer li{
-display: flex; 
-flex-flow: row-wrap;
-justify-content: space-betwwen; 
+.card5 {
+  text-align: center;
 }
 
 /*  h1 {
